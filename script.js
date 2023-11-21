@@ -32,3 +32,17 @@ const evenNumbers = numbersArray.filter((number) => {
 	return number % 2 === 0;
   });
 console.log (evenNumbers);
+
+// 2. დაწერეთ ფუნქცია, getCurrencySymbolFromCode რომელიც პარამეტრად მიიღებს ვალუტის კოდს (USD ან EUR ან GEL) სტრინგის სახით და დააბრუნებს ამ კოდის შესაბამის სიმბოლოს ($, €, ლ) თუ ისეთი კოდს გადავცემ რომლის სიმბოლოც არ მაქვს დააბრუნოს კოდი.
+function getCurrencySymbolFromCode(currency) {
+    if(currency === "EUR") {
+        return "€";
+    } else if(currency === "USD") {
+        return "$";
+    } else if(currency === "GELA") {
+        return "ლ";
+    } else {
+        return currency;
+    }
+};
+console.log(getCurrencySymbolFromCode("EUR"));
