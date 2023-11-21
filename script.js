@@ -46,3 +46,15 @@ function getCurrencySymbolFromCode(currency) {
     }
 };
 console.log(getCurrencySymbolFromCode("EUR"));
+
+// წინა ლექციის 6 დავალება. დაწერეთ ფუნქცია, რომელიც პარამეტრად მიიღებს ერთ მთელ რიცხვს და დააბრუნებს true -ს თუ რიცხვი არის კენტი ან false -ს თუ რიცხვი არის ლუწი.
+
+function defineNumberType(number) {
+	if (number % 2 !== 0) {
+	  return true;
+	} else {
+	  return false;
+	}
+  };
+console.log(defineNumberType(24));
+console.log(defineNumberType(29));
