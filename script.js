@@ -39,7 +39,7 @@ function getCurrencySymbolFromCode(currency) {
         return "€";
     } else if(currency === "USD") {
         return "$";
-    } else if(currency === "GELA") {
+    } else if(currency === "GEL") {
         return "ლ";
     } else {
         return currency;
